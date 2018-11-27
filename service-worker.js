@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/AEHelper/index.html/precache-manifest.f894d328514342f1d54a1b5d560f6667.js"
+  "/AEHelper/precache-manifest.4ae2bca82f9508bdbffbba7a195ec472.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/AEHelper/index.html/index.html", {
+workbox.routing.registerNavigationRoute("/AEHelper/index.html", {
   
   blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
 });
