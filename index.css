@@ -18,10 +18,15 @@ input.hpInput {
   margin-left: 10px;
 }
 
+div.setupArea {
+  display: flex;
+  flex-direction: column;
+}
+
 div.healthArea {
-  height: 150px;
   display: flex;
   justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
 div.healthTracker.nemesis {
@@ -45,6 +50,7 @@ div.healthTracker {
   justify-content: space-evenly;
   align-items: center;
   flex-grow: 1;
+  margin: 5px;
 }
 
 
@@ -121,7 +127,6 @@ div.deckHolder {
 }
 
 div.discardHolder {
-  height: 160px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -140,4 +145,5 @@ div.cardFront {
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
 }
