@@ -18,6 +18,29 @@ input.hpInput {
   margin-left: 10px;
 }
 
+.pageTabsArea {
+  display: flex;
+  justify-content: space-around;
+  font-size: 20px;
+}
+
+.pageTabsArea .activeTab {
+  border-style: solid solid none solid;
+  border-width: 1px;
+  height: 25px;
+  text-align: center;
+  flex-grow: 1;
+}
+
+.pageTabsArea .inactiveTab {
+  /*border-style: solid solid none solid;
+  border-width: 1px;*/
+  height: 25px;
+  text-align: center;
+  flex-grow: 1;
+  background-color: lightgray;
+}
+
 div.setupArea {
   display: flex;
   flex-direction: column;
@@ -30,12 +53,10 @@ div.healthArea {
 }
 
 div.healthTracker.nemesis {
-  /*background-color: lightskyblue;*/
   background: url("./nemesis.jpg");
 }
 
 div.healthTracker.gravehold {
-  /*background-color: lightskyblue;*/
   background: url("./city.jpg");
   background-position: center;
   background-size: cover;
@@ -52,7 +73,6 @@ div.healthTracker {
   flex-grow: 1;
   margin: 5px;
 }
-
 
 div.healthButton {
   height: 25px;
@@ -120,10 +140,9 @@ div.cardBack {
 }
 
 div.deckHolder {
-  height: 160px;
-  width: 150px;
+  /*height: 160px;
   display: flex;
-  justify-content: center;
+  justify-content: center;*/
 }
 
 div.discardHolder {
@@ -132,7 +151,24 @@ div.discardHolder {
   justify-content: center;
 }
 
+div.shuffleHolder {
+  background: lightgrey;
+
+  background-clip: content-box;
+  width: 100px;
+  height: 150px;
+  border-radius: 5px;
+  border: 1px dashed;
+  margin-left: 5px;
+  margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
 div.cardFront {
+  opacity: 1;
   background: lightgrey;
 
   background-clip: content-box;
@@ -146,4 +182,9 @@ div.cardFront {
   align-items: center;
   justify-content: center;
   text-align: center;
+}
+
+div.cardFront.hovering {
+  background: grey;
+  border-style: dashed;
 }
