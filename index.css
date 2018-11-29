@@ -21,24 +21,24 @@ input.hpInput {
 .pageTabsArea {
   display: flex;
   justify-content: space-around;
-  font-size: 20px;
+  font-size: 25px;
 }
 
 .pageTabsArea .activeTab {
   border-style: solid solid none solid;
   border-width: 1px;
-  height: 25px;
   text-align: center;
   flex-grow: 1;
+  padding-bottom: 5px;
 }
 
 .pageTabsArea .inactiveTab {
-  /*border-style: solid solid none solid;
-  border-width: 1px;*/
-  height: 25px;
+  border-style: none none solid none;
+  border-width: 1px;
   text-align: center;
   flex-grow: 1;
   background-color: lightgray;
+  padding-bottom: 5px;
 }
 
 div.setupArea {
@@ -169,7 +169,7 @@ div.shuffleHolder {
 
 div.cardFront {
   opacity: 1;
-  background: lightgrey;
+  /*background: lightgrey;*/
 
   background-clip: content-box;
   width: 100px;
@@ -177,11 +177,58 @@ div.cardFront {
   border-radius: 5px;
   border: 3px solid;
   margin-left: 5px;
+
   margin-bottom: 5px;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
+}
+
+/* .cardFront.four {
+  background-image: radial-gradient(circle, violet 50%, grey, black);
+}
+
+.cardFront.three {
+  background-image: radial-gradient(circle, turquoise 50%, grey, black);
+}
+
+.cardFront.one {
+  background-image: radial-gradient(circle, yellow 50%, grey, black);
+}
+
+.cardFront.two {
+  background-image: radial-gradient(circle, orange 50%, grey, black);
+}
+
+.cardFront.threefour {
+  background-image: radial-gradient(circle, turquoise 20%, violet, purple);
+}
+
+.cardFront.onetwo {
+  background-image: radial-gradient(circle, yellow 50%,white 5%, orange);
+} */
+
+.cardFront.nemesis {
+  /* background-image: radial-gradient(circle, red 20%, rgb(133, 40, 40) 70%, black); */
+  background-image: radial-gradient(circle, pink, rgb(133, 40, 40) 70%, black);
+  color: black;
+}
+
+.cardFront.one, 
+.cardFront.two,
+.cardFront.three,
+.cardFront.four,
+.cardFront.wild,
+.cardFront.onetwo,
+.cardFront.threefour
+{
+  background-image: radial-gradient(circle, white 40%, lightgray, black);
+}
+
+.cardFront.wild
+{
+  background-image: radial-gradient(circle, yellow 25%, rgb(202, 202, 68) 70%, black);
 }
 
 div.cardFront.hovering {
