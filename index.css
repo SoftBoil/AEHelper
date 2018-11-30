@@ -160,8 +160,10 @@ div.shuffleHolder {
   height: 150px;
   border-radius: 5px;
   border: 1px dashed;
+  
   margin-left: 5px;
-  margin-bottom: 5px;
+  margin-top: 2px;
+  margin-bottom: 2px;
   display: flex;
   align-items: center;
   justify-content: center;
